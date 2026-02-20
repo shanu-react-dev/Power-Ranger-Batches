@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        height: 200px;
+        width: 200px;
+      }
+
+      .image2 {
+        /* position: absolute; */
+        position: relative;
+        left: 100px;
+        z-index: -10;
+      }
+
+      .image3 {
+        z-index: 20;
+      }
+
+      .box {
+        /* height: 40vh; */
+        width: 100%;
+        background-color: yellowgreen;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .box > section {
+        height: 100px;
+        width: 500px;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img
+        src="https://cdn.pixabay.com/photo/2025/06/05/15/54/cat-9643209_1280.jpg"
+        alt=""
+        class="image1"
+      /><img
+        src="https://cdn.pixabay.com/photo/2026/01/26/10/05/nature-10088798_1280.jpg"
+        alt=""
+        class="image2"
+      /><img
+        src="https://cdn.pixabay.com/photo/2025/11/30/18/17/shrub-9986901_1280.jpg"
+        alt=""
+        class="image3"
+      /><img
+        src="https://cdn.pixabay.com/photo/2026/02/02/18/41/flowers-10101432_1280.jpg"
+        alt=""
+        class="image4"
+      />
+
+      <div class="box">
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+      </div>
+    </div>
+  </body>
+</html>

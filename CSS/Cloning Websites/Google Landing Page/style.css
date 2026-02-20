@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: yellow;
+}
+
+.firstBox {
+  width: 10%;
+  height: 100%;
+  background-color: lightseagreen;
+}
+
+.firstBox > ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
+}
+
+.secondBox {
+  width: 20%;
+  height: 100%;
+  background-color: lightseagreen;
+}
+
+.secondBox > ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
+}
+
+.secondBox > ul .profile {
+  height: 40px;
+  width: 40px;
+  background-color: aqua;
+  border-radius: 100%;
+  background-image: url("./amarjeet_img.jpg");
+  background-size: cover;
+}
+
+.container {
+  height: calc(100vh - 60px - 100px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: cornflowerblue; */
+}
+
+.container > img {
+  width: 30%;
+  /* height: 50%; */
+}
+
+.container > .searchContent {
+  width: 50%;
+  position: relative;
+  /* background-color: red; */
+}
+
+.mic,
+.glens {
+  width: 30px;
+  height: 30px;
+}
+
+.searchContent > input {
+  width: 100%;
+  padding: 12px 140px 12px 27px;
+  border-radius: 30px;
+}
+
+.searchContent > .plus {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+.parent {
+  position: absolute;
+
+  top: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 10px;
+  border: 2px solid red;
+  border-radius: 20px;
+  font-size: 13px;
+  padding: 2px;
+}
+
+.glens {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  fill: gray;
+  top: 7px;
+  height: 23px;
+  width: 23px;
+}
+
+.mic {
+  position: absolute;
+  top: 7px;
+  right: 124px;
+  fill: gray;
+  height: 23px;
+  width: 23px;
+}
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: red;
+}

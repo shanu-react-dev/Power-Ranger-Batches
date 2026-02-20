@@ -1,0 +1,202 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  height: 68px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 5px 5px 10px gainsboro;
+  /* background-color: yellow; */
+}
+
+nav > .name {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 700;
+  /* background-color: purple; */
+}
+
+nav > .navlists {
+  height: 100%;
+  width: 40%;
+  /* background-color: green; */
+}
+
+.navlists > ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
+}
+
+ul a {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a1a1a;
+}
+
+nav > .downloadCv {
+  height: 100%;
+  width: 15%;
+  /* background-color: crimson; */
+}
+
+nav > .downloadCv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.downloadCv > button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.downloadCv > button > a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+/*! Home Page starts here  */
+#home {
+  height: calc(100vh - 68px);
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: yellow; */
+}
+
+.details {
+  height: 100%;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: lightpink; */
+}
+
+.details > .info {
+  height: 70%;
+  width: 100%;
+  /* background-color: lightskyblue; */
+  display: flex;
+  align-items: start;
+  gap: 15px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.info > span {
+  font-size: 17px;
+  padding: 4px 10px;
+  border-radius: 7px;
+  background-color: yellow;
+}
+
+.info > h1 {
+  font-size: 45px;
+}
+
+.info > h1 > #career {
+  color: cornflowerblue;
+}
+
+.info > p {
+  font-size: 19px;
+  text-align: justify;
+}
+
+.btnBox > button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 7px;
+  border: 2px solid cornflowerblue;
+}
+
+.btnBox > button:first-child {
+  background-color: cornflowerblue;
+
+  color: #fff;
+  /* margin: 10px; */
+}
+.btnBox > button:first-child:hover {
+  background-color: transparent;
+  color: #1a1a1a;
+  transition: all 0.8s;
+}
+
+.btnBox > button:last-child {
+  background-color: transparent;
+}
+
+.btnBox a {
+  text-decoration: none;
+  color: #1a1a1a;
+  padding: 10px 20px;
+  border: 2px solid cornflowerblue;
+  border-radius: 7px;
+  transition: 0.7s all;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.btnBox > a > i {
+  position: relative;
+  top: 3px;
+}
+
+.btnBox a:hover {
+  background-color: cornflowerblue;
+  color: #fff;
+}
+.btnBox > button:last-child:hover {
+  background-color: cornflowerblue;
+  color: #fff;
+}
+
+.iconBox > i {
+  font-size: 30px;
+  margin: 10px;
+  transition: all 0.7s;
+  padding: 4px;
+}
+
+.iconBox > i:hover {
+  color: cornflowerblue;
+  border: 2px solid black;
+  /* padding: 4px; */
+  border-radius: 50%;
+}
+.img {
+  height: 100%;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: lightseagreen; */
+}
+
+.img > .myImg {
+  height: 350px;
+  width: 350px;
+  border-radius: 100%;
+  background-image: url("https://imgs.search.brave.com/o_-4VPghVjsYS0XuZ0Nk_sbV-wEMTzLuIxDtrzEeMf4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2FmLzAz/L2I0L2FmMDNiNGY1/MTA3OTg2YWZmOTJl/MzU4ZjQ3ODM1ZDZi/LmpwZw");
+  background-size: cover;
+  /* background-color: bisque; */
+}

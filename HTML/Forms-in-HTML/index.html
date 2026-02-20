@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--! XSS, http & https, Types of input  -->
+    <form>
+      <label for="username">Enter Username</label>
+      <input
+        type="text"
+        placeholder="Enter Username"
+        id="username"
+        name="username"
+        minlength="3"
+        maxlength="35"
+        required
+      />
+
+      <br /><br />
+      <label for="password">Enter Password</label>
+      <input
+        type="password"
+        placeholder="Enter Password"
+        id="password"
+        name="password"
+        pattern="[A-Z a-z 0-9]{8}"
+        required
+      />
+
+      <br /><br />
+      <label for="email">Enter email</label>
+      <input
+        type="email"
+        name="mailId"
+        id="email"
+        placeholder="example@gmail.com"
+        required
+      />
+
+      <br /><br />
+      <label for="age">Enter Age</label>
+      <input
+        type="number"
+        id="age"
+        name="age"
+        required
+        placeholder="enter age"
+        min="18"
+        max="45"
+      />
+
+      <br /><br />
+      <label for="contact">Enter contact details</label>
+      <input type="tel" placeholder="enter phone number" id="contact"
+      name="contact" minlength="10" maxlength="10"" required />
+
+      <br /><br />
+      <label for="dob">DOB</label>
+      <input type="date" name="dob" id="dob" min="" />
+
+      <br /><br />
+      <button>Login</button>
+      <input type="button" value="Sundari button" />
+      <input type="submit" value="submit using input button" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+
+h1 {
+  border: 2px solid blue;
+  background-color: lightblue;
+  height: 200px;
+  width: 500px;
+  /* padding: 40px; */
+  padding: 30px;
+}
+
+#firstPara {
+  height: 200px;
+  width: 500px;
+  background-color: lightpink;
+  border: 2px solid pink;
+  /* padding: 40px; */
+  padding: 30px;
+  box-sizing: border-box;
+  /* overflow: auto; */
+  /* overflow: scroll; */
+  /* overflow: hidden; */
+  overflow: scroll;
+}
+
+#secondPara {
+  height: 200px;
+  width: 500px;
+  background-color: lightskyblue;
+  border: 2px solid blue;
+  /* box-sizing: border-box; */
+  /* padding: 40px; */
+}
+#thirdPara {
+  height: 200px;
+  width: 500px;
+  background-color: lightseagreen;
+  border: 2px solid seagreen;
+}
+#fourthPara {
+  height: 200px;
+  width: 500px;
+  background-color: lightsalmon;
+  border: 2px solid salmon;
+}

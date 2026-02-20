@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+div {
+  height: 200px;
+  width: 200px;
+  background-color: lightseagreen;
+  border-radius: 50%;
+  padding: 100px;
+}
+/* 
+.secondbox {
+  height: 200px;
+  width: 200px;
+  background-color: lightseagreen;
+}
+
+.thirdbox {
+  height: 200px;
+  width: 200px;
+  background-color: lightseagreen;
+}
+
+.fourthbox {
+  height: 200px;
+  width: 200px;
+  background-color: lightseagreen;
+} */
+
+.secondbox {
+  background-color: lightpink;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.thirdbox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.fourthbox {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

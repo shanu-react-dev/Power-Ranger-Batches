@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Basic Icons -->
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Filled Icons -->
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css"
+      rel="stylesheet"
+    />
+    <!-- Brand Icons -->
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Typed JS link -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
+      integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar Starts here -->
+    <nav>
+      <div class="name">Sharma</div>
+
+      <div class="navlists">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="downloadCv">
+        <button>
+          <a href="./Presentation Details.pdf" download>Download CV</a>
+          <i class="bx bx-save"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- HomePage starts here -->
+    <section id="home">
+      <section class="details">
+        <div class="info">
+          <span>Rohit Sharma</span>
+          <h1>
+            I'm <br />
+            <span id="career"></span>
+          </h1>
+          <p>
+            I am a cricket player having experiences more than 20 yrs. Last in
+            my captaincy I won the asia cup. I am also playing IPL for Mumbai
+            Indians Team.
+          </p>
+          <div class="btnBox">
+            <button>Hire Me</button>
+            <a href="./Presentation Details.pdf" download
+              >Download CV <i class="bx bx-save"></i
+            ></a>
+          </div>
+
+          <div class="iconBox">
+            <i class="bxl bx-instagram"></i>
+            <i class="bxl bx-linkedin"></i>
+            <i class="bxl bx-dribbble"></i>
+            <i class="bxl bx-github"></i>
+          </div>
+        </div>
+      </section>
+      <section class="img">
+        <div class="myImg"></div>
+      </section>
+    </section>
+  </body>
+
+  <script>
+    var typed2 = new Typed("#career", {
+      strings: [
+        "A Software Developer",
+        "A MERN Stack Developer",
+        "A UI UX Designer",
+        "Database Engineer",
+      ],
+      typeSpeed: 60,
+      backSpeed: 40,
+      fadeOut: false,
+      loop: true,
+    });
+  </script>
+</html>

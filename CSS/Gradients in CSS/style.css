@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  height: 500px;
+  width: 700px;
+  border: 2px solid black;
+  /* background-color: lightsalmon, lightseagreen;❌❌❌ */
+  /* background: linear-gradient(lightsalmon, lightseagreen, lightpink, lightblue); */
+  /* background: linear-gradient(
+    to right,
+    lightsalmon,
+    lightseagreen,
+    lightpink,
+    lightblue
+  ); */
+  /* background: linear-gradient(
+    to left,
+    lightsalmon,
+    lightseagreen,
+    lightpink,
+    lightblue
+  ); */
+
+  /* background: linear-gradient(
+    to top left,
+    lightsalmon,
+    lightseagreen,
+    lightpink,
+    lightblue
+  ); */
+
+  /* background: linear-gradient(
+    220deg,
+    lightsalmon,
+    lightseagreen,
+    lightpink,
+    lightblue
+  ); */
+
+  /* background: linear-gradient(
+    220deg,
+    lightsalmon 50%,
+    lightseagreen 50%,
+    lightpink,
+    lightblue
+  ); */
+
+  /* background: radial-gradient(circle at top, #1a1b1c, #baba319d, #abcd); */
+
+  /* background: conic-gradient(red, green, lightpink, lightseagreen); */
+  background: repeating-linear-gradient(red 10%, blue 20%, green 30%);
+}

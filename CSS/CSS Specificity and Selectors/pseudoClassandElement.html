@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* button {
+        color: white;
+        background-color: black;
+      }
+      button:hover {
+        color: red;
+        background-color: lightblue;
+      }
+
+      input:focus {
+        background-color: lightseagreen;
+        color: white;
+      }
+      input:active {
+        background-color: orange;
+        color: lightskyblue;
+      }
+      li:first-child {
+        color: red;
+      }
+      li:last-child {
+        color: green;
+      }
+
+      li:nth-child(5) {
+        color: yellow;
+      }
+      li:nth-child(even) {
+        background-color: red;
+      }
+      li:nth-child(odd) {
+        background-color: aquamarine;
+      } */
+
+      /*! Pseudo Element Selector  */
+      h1::first-letter {
+        color: blue;
+        font-size: 100px;
+        background-color: red;
+      }
+      p::first-line {
+        color: red;
+      }
+
+      /* li::marker {
+        content: "😄";
+      } */
+
+      li::after {
+        content: "💤💤";
+      }
+      li::before {
+        content: "👉🏼👉🏼";
+      }
+
+      a:visited {
+        color: green;
+      }
+
+      a:active {
+        color: yellow;
+      }
+
+      a {
+        color: aqua;
+      }
+      p::selection {
+        background-color: crimson;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo Class and Pseudo Element Selectors in HTML</h1>
+    <label for="username">Enter Username</label>
+    <input type="text" id="username" />
+    <button>Hover on the button to change the color</button>
+
+    <ul>
+      <li>Play Station 5</li>
+      <li>GTA 5</li>
+      <li>Uncharted</li>
+      <li>God Of War</li>
+      <li>Arkham city</li>
+      <li>Resident Evil</li>
+      <li>Smackdown Pain</li>
+      <li>Call Of Duty</li>
+      <li>Pubg PC</li>
+      <li>Forza Horizon</li>
+    </ul>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aspernatur
+      aut sint quas, deserunt impedit quo quidem quaerat nostrum praesentium
+      culpa, exercitationem eveniet amet eaque, assumenda quam. Nisi, at
+      eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Accusamus, ea hic minus consequuntur, vero exercitationem labore mollitia,
+      nihil tempore cumque natus voluptas! Eligendi amet minima minus blanditiis
+      possimus, sint molestias?
+    </p>
+
+    <a href="https://www.github.com">Click here to visit github</a>
+    <a href="https://www.pokemon.com">Let's go for a movie</a>
+    <a href="https://www.sinchan.com">Let's watch Ben 10</a>
+  </body>
+</html>

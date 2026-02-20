@@ -1,0 +1,46 @@
+.main > div {
+  height: 200px;
+  width: 200px;
+  /* background-color: lightseagreen; */
+}
+
+.firstBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: cornflowerblue;
+}
+
+.secondBox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: lightsalmon;
+}
+
+.thirdBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: lightsteelblue;
+}
+
+.fourthBox {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: lightcoral;
+}
+
+.firstBox > div {
+  height: 50px;
+  width: 50px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.firstBox > div:last-child {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

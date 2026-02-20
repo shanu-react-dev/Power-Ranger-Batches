@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        height: 68px;
+        width: 100%;
+        background-color: red;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .logo {
+        height: 100%;
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+      }
+      .lists {
+        height: 100%;
+        width: 40%;
+        background-color: yellow;
+      }
+
+      .lists > ul {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style: none;
+      }
+
+      ul > li:hover {
+        transform: translateY(-3px);
+      }
+      .btn {
+        height: 100%;
+        width: 15%;
+        background-color: lightseagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Logo</div>
+
+      <div class="lists">
+        <ul>
+          <li>List1</li>
+          <li>List2</li>
+          <li>List3</li>
+          <li>List4</li>
+        </ul>
+      </div>
+
+      <div class="btn"><button>Click Me</button></div>
+    </nav>
+  </body>
+</html>

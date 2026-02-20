@@ -1,0 +1,30 @@
+h1 {
+  background: #b4aeae;
+}
+body {
+  background-color: #1a1a1a;
+}
+
+.box {
+  height: 50vh;
+  width: 500px;
+  background-color: blueviolet;
+  background-image: url(./poke.jpg);
+  /* background-size: contain;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -10px -100px;
+}
+
+.bell {
+  height: 500px;
+  width: 500px;
+  background-color: lightpink;
+  border-radius: 60%;
+  background-image: url("https://cdn.pixabay.com/photo/2025/08/25/16/28/christmas-9796489_1280.png");
+  /* background-size: contain; */
+  /* background-size: cover; */
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}

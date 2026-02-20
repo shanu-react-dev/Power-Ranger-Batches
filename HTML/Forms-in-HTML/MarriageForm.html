@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <h3>Marriage Form</h3>
+      <label for="Name">Enter Name</label>
+      <input
+        type="text"
+        name="Name"
+        id="Name"
+        placeholder="Enter Name"
+        minlength="3"
+        maxlength="20"
+        required
+      />
+
+      <br /><br />
+      <label for="Contact">Enter Contact Details</label>
+      <input
+        type="tel"
+        name="Contact"
+        id="Contact"
+        placeholder="ENter Contact"
+        minlength="10"
+        maxlength="10"
+        required
+      />
+
+      <br /><br />
+      <label for="dob">Select Date Of Birth</label>
+      <input
+        type="date"
+        name="dob"
+        id="dob"
+        min="2000-01-01"
+        max="2005-12-31"
+        required
+      />
+
+      <br /><br />
+      <label for="age">ENter age</label>
+      <input
+        type="number"
+        name="age"
+        id="age"
+        placeholder="enter age"
+        min="18"
+        max="26"
+        required
+      />
+
+      <br /><br />
+      <label for="job">Select Profession</label>
+      <select name="job" id="job">
+        <option value="engineer">Engineer</option>
+        <option value="doctor">Doctor</option>
+        <option value="">Sundari</option>
+      </select>
+
+      <br /><br />
+      <label for="gender">Select Gender</label>
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="others" value="others" />
+      <label for="others">Others</label>
+
+      <br /><br />
+      <label for="photo">Upload your Photo</label>
+      <input type="file" name="photo" id="photo" accept=".png" required />
+
+      <br /><br />
+      <label for="skills">Select skills</label>
+      <input type="checkbox" name="skills" id="Cooking" value="cooking" />
+      <label for="Cooking">Cooking</label>
+      <input type="checkbox" name="skills" id="Singing" value="singing" />
+      <label for="Singing">Singing</label>
+      <input type="checkbox" name="skills" id="Dancing" value="dancing" />
+      <label for="Dancing">Dancing</label>
+
+      <br /><br />
+      <label for="date">Select your date time</label>
+      <input type="datetime" name="date" id="date" />
+      <br /><br />
+      <label for="dateTime-local">Select date and time</label>
+      <input type="datetime-local" name="dateTime-local" id="dateTime-local" />
+
+      <br /><br />
+      <fieldset>
+        <legend>Address Info</legend>
+
+        <label for="street">Street No.</label>
+        <input
+          type="text"
+          name="streetNo"
+          id="street"
+          placeholder="enter street name"
+          required
+        />
+
+        <br /><br />
+
+        <label for="Village">Village Name</label>
+        <input
+          type="text"
+          name="village"
+          id="Village"
+          placeholder="Enter village name"
+          required
+        />
+        <br /><br />
+
+        <label for="city">City</label>
+        <input
+          type="text"
+          name="city"
+          id="city"
+          placeholder="City Name"
+          required
+        />
+        <br /><br />
+
+        <label for="pinCode">Pin Code</label>
+        <input
+          type="number"
+          name="pinCode"
+          id="pinCode"
+          placeholder="Pin Code"
+          min="100000"
+          max="999999"
+        />
+      </fieldset>
+
+      <br /><br />
+      <label for="feedback">Enter Feedback</label>
+      <textarea name="feedback" id="feedback" cols="50" rows="20"></textarea>
+
+      <br /><br />
+      <input type="submit" value="Register for Marriage" />
+      <input type="reset" value="Reset Form" />
+    </form>
+  </body>
+</html>
