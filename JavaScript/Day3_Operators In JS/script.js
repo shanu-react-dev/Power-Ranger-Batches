@@ -51,3 +51,5 @@ var fNum = 2;
 var sNum = 4;
 var exp = fNum ** sNum;
 console.log(exp);
+
+console.log(null + "shanu");
