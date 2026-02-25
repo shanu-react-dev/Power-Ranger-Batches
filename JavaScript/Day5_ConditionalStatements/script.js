@@ -1,5 +1,7 @@
 // console.log("Shanu is a good person!!");
 
+//! if and if else
+//? if and if else is a conditional statement generally used to execute a block of codes based on certain condtions. if block codes will be executed when the conditions are true and else block will be executed when the conditions are false.
 // let isMarried = true;
 // if (isMarried) {
 //   console.log("You have a good relationship");

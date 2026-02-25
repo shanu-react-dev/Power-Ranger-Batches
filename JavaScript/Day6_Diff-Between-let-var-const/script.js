@@ -40,3 +40,6 @@ const myFrndName = "Sundari";
 console.log(myFrndName);
 myFrndName = "Siva";
 // console.log(myFrndName); //!Uncaught TypeError: Assignment to constant variable.
+
+//!Overview
+//todo var has global scope it can be accessed from anywhere in the file even before declaration. let and const is having block scope or script scope it can't be accessed before declaration. Variables created with let keyword can be reinitialized but can't be redeclared and const can be only declared and initialized at the same time.
