@@ -89,7 +89,7 @@
 
 // sumOfArguments(1, 2, 4, 5, 6, 7, 8, 8, 9);
 
-//! IIFE (Immediately Invoked Function Expression)
+//! 4. IIFE (Immediately Invoked Function Expression)
 //? IIFE stands for Immediately Invoked Function Expression. It is a fucntion which is called as soon as it has been declared. Before using IIFE function the previous line must and should be terminated.
 // (function () {
 //   console.log("Hii This is IIFE function..");
@@ -104,7 +104,7 @@
 
 // IIFE(); //!❌❌ It is not possible Uncaught syntax error
 
-//! Arrow Function
+//! 5. Arrow Function
 //? Arrow Function is a shrthand function. It is used to create a function without using function keyword. It was introduced in ES6 Version. It does implicit return as well as explicit return.
 
 // let arrowFun = () => console.log("Shanu");
@@ -125,8 +125,8 @@
 
 //! Prog. Questions
 //? Reverse a Number (Without String Methods)
-let a = 123456;
-let rev = 0;
+// let a = 123456;
+// let rev = 0;
 
 // while(a>0){
 //   let ld=a%10;
@@ -184,19 +184,121 @@ let rev = 0;
 // })("Shanu");
 
 //? Check Palindrome
-function isPalindrome(input) {
-  let revString = "";
-  for (let i = input.length - 1; i >= 0; i--) {
-    console.log(input[i]);
-    revString += input[i];
-  }
-  if (revString == input) {
-    console.log(
-      `Provided Input ${input} and reversed input ${revString} both are same that's why it is palindrome`,
-    );
-  } else {
-    console.log("It is not palindrome");
-  }
+// function isPalindrome(input) {
+//   let revString = "";
+//   for (let i = input.length - 1; i >= 0; i--) {
+//     console.log(input[i]);
+//     revString += input[i];
+//   }
+//   if (revString == input) {
+//     console.log(
+//       `Provided Input ${input} and reversed input ${revString} both are same that's why it is palindrome`,
+//     );
+//   } else {
+//     console.log("It is not palindrome");
+//   }
+// }
+
+// isPalindrome("malayalam");
+
+//! Nested Function
+//? A function declared inside another function is known as nested function. If I want to execute the nested function then it must and should be returned by its parent.
+
+//! closures
+//? It is a kind of function which memoizes the variables even after executiong the function. It gets created when we are accessing a variable inside a child function which has been declared in parent function.
+// function parent () {
+//   let fName = "Shanu"
+
+//   function child () {
+//     let lName = "Singh"
+//     let fullName = fName + " " + lName
+//     console.log(fullName)
+//   }
+//   child()
+// console.log("I am a parent function!!")
+//   return "dodge"
+// }
+
+// parent()
+
+// function parent() {
+//   console.log("I am a parent function");
+//   function child() {
+//     console.log("I am a Child Function");
+//   }
+//   return child;
+// }
+
+// let returnedFunction = parent();
+// console.log(returnedFunction());
+
+// function parent() {
+//   let myName = "Shanu";
+//   console.log(myName);
+//   return "Sundari";
+// }
+
+// let returnedData = parent();
+// console.log(returnedData);
+// let myCar = "Dodge Challenger HellCat";
+// function parent() {
+//   let a = "Thalapathy";
+//   function child() {
+//     let b = "Vijay";
+//     console.log(a + " " + b);
+//   }
+//   return child;
+// }
+
+// let retData = parent(); // returns child function
+// console.log(retData);
+// let retData2 = retData();
+// console.log(retData2); // undefined
+
+//! Function Currying
+//? Function Currying is a technique by which we can call a returned function using another argument block.
+// function getSum() {
+//   let firstNum = 10;
+//   let secNum = 20;
+//   function sum() {
+//     return `Sum of these two numbers are: ${firstNum + secNum}`;
+//   }
+//   return sum;
+// }
+
+// let myData = getSum();
+// console.log(myData);
+// let sumOfTwoNumbers = myData();
+// console.log(sumOfTwoNumbers);
+
+// let data = getSum()();
+// console.log(data);
+
+//! Higher Order Function
+//? A function which accepts another function as an argument is known as Higher Order Function.
+
+//! Callback Function
+//? A function which is passed as an argument is known as Callback Function.
+
+// function HOF(myFun) {
+//   console.log("I am a Higher Order Function");
+//   console.log(myFun);
+//   myFun();
+// }
+
+// function callback() {
+//   console.log("I am a callback function");
+// }
+
+// HOF(callback);
+
+function myName(a) {
+  console.log(a);
+  a();
 }
 
-isPalindrome("malayalam");
+// myName(function () {
+//   console.log("Hii This is Shanu");
+// });
+
+myName(() => console.log("Hii I am a boy.."));
