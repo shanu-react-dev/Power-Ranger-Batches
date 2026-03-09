@@ -292,13 +292,23 @@
 
 // HOF(callback);
 
-function myName(a) {
-  console.log(a);
-  a();
-}
-
+// function myName(a) {
+//   console.log(a);
+//   a();
+// }
+//! Higher Order function with anonymous function
 // myName(function () {
 //   console.log("Hii This is Shanu");
 // });
+//! Higher Order function with arrow function
+// myName(() => console.log("Hii I am a boy.."));
 
-myName(() => console.log("Hii I am a boy.."));
+//todo Generator Function
+//! Named function as an IIFE function
+let myfun = (function namedIIFE() {
+  console.log("I am named IIFE FUnction!!");
+  return "HII";
+})();
+
+// namedIIFE();
+console.log(myfun);
