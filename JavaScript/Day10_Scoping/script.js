@@ -1,4 +1,4 @@
-//! variables created with var keyword follows global scopes.
+//! variables created with var keyword follows global scopes. it can be accessible anywhere inside the file.
 // console.log(firstNum); // undefined
 // var firstNum = 10;
 // console.log(firstNum);
@@ -12,7 +12,7 @@
 // var b = "Sundari";
 
 // let a = "Shanu";
-//! Block Scope followed by variable created with let and const keyword
+//! Block Scope followed by variable created with let and const keyword. It can be accessible only inside the block not outside of the block
 // for (let i = 0; i < 10; i++) {
 //   console.log(i + 1);
 // }
@@ -29,7 +29,7 @@
 // console.log(myName);
 
 // var firstNum = 1;
-
+//! Local Scope:- Variables created with let var or const inside a function follows local scope it can be accessible inside the function itself not outside of the function.
 // function myName() {
 //   console.log(firstNum);
 //   var secNum = 42;
