@@ -169,5 +169,43 @@ console.log(userName2.split(" "));
 //? startsWith is a string method used to check the string whetehr it is starting with specified character or not. It returns boolean value.
 console.log(userName2.startsWith("P"));
 
-//! 
-// console.log(userName2.)
+//! trim
+//? It is used to remove the space in start and end of the string. It is a no argument method.
+let names = " maga lakshmi ";
+console.log(names.trim());
+
+//! trimStart
+//? it is used to remove the space only start of the string. It is a no argument method.
+console.log(names.trimStart());
+
+//! trimEnd
+//? it is used to remove the space only end of the string. It is a no argument method.
+console.log(names.trimEnd());
+
+//! toUppercase
+//? it is used to coverts the characters into uppercase. It is a no argument method.
+console.log(names.toUpperCase());
+
+//! toLowercase
+//? it is used to coverts the characters into Lowercase. It is a no argument method.
+console.log(names.toLowerCase());
+
+//! toString
+//It is used to converts any kinda datatype into string. It is a no argument method.
+let mobilenum = 767567898;
+console.log(mobilenum.toString());
+let fun = () => "Hii THis is SHanu";
+console.log(fun.toString());
+
+let strData = "Shanu";
+//todo codePointAt
+//todo isWellFormed
+//todo localeCompare
+//todo match
+//todo matchALl
+//todo normalize
+//todo search
+//todo toLocalLowerCase
+//todo toLocalUpperCase
+//todo toWellFormed
+//todo valueOf
