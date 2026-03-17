@@ -126,7 +126,7 @@
 // let lastIndex = arrOfUsers.lastIndexOf("Sundari");
 // console.log(lastIndex);
 
-let ages = [20, 40, 20, 30, 19, 21, 30];
+// let ages = [20, 40, 20, 30, 19, 21, 30];
 // console.log(ages.lastIndexOf(29));
 
 //!pop
@@ -212,5 +212,26 @@ let unshiftedArr = myArr.unshift("Argentina", "Belgium");
 console.log(unshiftedArr);
 console.log(myArr);
 
-//!
+//! sort
+//? sort is an array method which is used to sort an array based on 
 let cities = ["Chrompet", "Delhi", "Patna", "Mumbai", "Pune", "Kanyakumari"];
+let sortedArr = cities.sort();
+console.log(sortedArr);
+
+let ages = [12, 9, 18, 14, 20];
+let sortedAge = ages.sort(function (a, b) {
+  return b - a;
+});
+console.log(sortedAge);
+
+let descArr = [];
+for (let i = 0; i < ages.length; i++) {
+  let greater = ages[0];
+  if (greater < ages[i]) {
+    greater = ages[i];
+  } else {
+    descArr.push(ages[i]);
+  }
+}
+
+console.log(descArr);
