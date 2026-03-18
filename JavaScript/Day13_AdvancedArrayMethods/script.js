@@ -96,3 +96,39 @@ for (let i in myName) {
 for (let i in arr) {
   console.log(arr[i]);
 }
+
+// let userName = "Susmitha";
+// userName.forEach((ele, index) => console.log(ele));
+
+// let arrOfCars = ["Subaru", "Carrera GT", "Porsche 911", "Audi R8", "VS 6"];
+// let output = arrOfCars.reduce((acc, currval) => acc - currval);
+// console.log(output);
+
+let arr1 = [1, 2, 3, [4, 5, 6, 7]];
+
+let updatedArr = [];
+for (let i = 0; i < arr1.length; i++) {
+  let myArr;
+  if (typeof arr1[i] == "object") {
+    myArr = arr1[i];
+    for (let j = 0; j < myArr.length; j++) {
+      updatedArr.push(myArr[j]);
+    }
+  } else {
+    updatedArr.push(arr1[i]);
+  }
+}
+console.log(updatedArr);
+
+let newArr = [];
+for (const ele of arr1) {
+  let myarr;
+  if (typeof ele == "object") {
+    myarr = ele;
+    myarr.forEach((ele, index) => newArr.push(ele));
+  } else {
+    newArr.push(ele);
+  }
+}
+
+console.log(newArr);
