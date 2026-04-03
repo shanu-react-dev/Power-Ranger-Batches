@@ -4,14 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Local Storage</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.6.1/toastify.js"
+      integrity="sha512-MnKz2SbnWiXJ/e0lSfSzjaz9JjJXQNb2iykcZkEY2WOzgJIWVqJBFIIPidlCjak0iTH2bt2u1fHQ4pvKvBYy6Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   </head>
   <body>
     <h1>Signup Here</h1>
     <form>
-      <input type="text" placeholder="Enter Username" name="username" id="username" />
-      <input type="password" placeholder="Enter password" name="password" id="password" />
-      <input type="tel" placeholder="Enter contact" name="contact" id="contact" />
+      <input
+        type="text"
+        placeholder="Enter Username"
+        name="username"
+        id="username"
+      />
+      <input type="email" placeholder="Enter Email" name="email" id="email" />
+      <input
+        type="password"
+        placeholder="Enter password"
+        name="password"
+        id="password"
+      />
+      <input
+        type="tel"
+        placeholder="Enter contact"
+        name="contact"
+        id="contact"
+      />
       <button type="submit">Submit</button>
+      <p>Already registered? Login <a href="./login.html">here</a></p>
     </form>
     <script src="./signup.js"></script>
   </body>

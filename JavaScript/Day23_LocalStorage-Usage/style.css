@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: auto;
+    width: 100%;
+    background-color: #1a1b1c44;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 400px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px lightblue;
+}
+
+.card >img{
+    height: 60%;
+    width: 93%;
+    border-radius: 7px;
+}
+.card>h3{
+    font-size: 16px;
+    font-weight: 900;
+    width: 93%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #001428;
+}
+.card>p:nth-child(3),.card>p:nth-child(4){
+    font-size: 14px;
+    width: 93%;
+    /* background-color: red;
+    color: green; */
+}
+
+.card>div{
+    width: 93%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card>div>button{
+    padding: 10px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.card>div>button:first-child{
+    border: 2px solid gainsboro;
+    background: #fff;
+    transition: all 0.7s;
+}
+
+.card>div>button:first-child:hover{
+    background: yellow;
+    color: black;
+}
+
+.card>div>button:last-child{
+    border: 2px solid yellow;
+    background-color: yellow;
+    color: #1a1a1a;
+    transition: all 0.7s;
+}
+
+.card>div>button:last-child:hover{
+    background: transparent;
+    color: #1a1a1a;
+}
